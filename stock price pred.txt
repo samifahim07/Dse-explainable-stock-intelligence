@@ -1,0 +1,115 @@
+                    ┌─────────────────────┐
+                    │   Kaggle DSE Data   │
+                    │  Historical OHLCV   │
+                    └──────────┬──────────┘
+                               ↓
+                    1. DATA UNDERSTANDING
+                               ↓
+                    Data Cleaning & Validation
+                    • Missing values
+                    • Duplicates
+                    • Wrong dates
+                    • Outliers
+                               ↓
+                    2. EXPLORATORY DATA ANALYSIS
+                    • Price trends
+                    • Volume trends
+                    • Correlation
+                    • Volatility
+                               ↓
+                    3. FEATURE ENGINEERING
+                    • Returns
+                    • Lag features
+                    • Rolling mean
+                    • Rolling std
+                    • Volatility
+                               ↓
+                    4. TECHNICAL INDICATORS
+                    • SMA / EMA
+                    • RSI
+                    • MACD
+                    • Bollinger Bands
+                    • ATR
+                    • ROC
+                               ↓
+                    5. TARGET CREATION
+                    ┌──────────┴──────────┐
+                    ↓                     ↓
+             Next-Day Price       Next-Day Direction
+                    ↓                     ↓
+                 REGRESSION           CLASSIFICATION
+                               ↓
+                    6. CHRONOLOGICAL SPLIT
+                               ↓
+              ┌────────────────────────────┐
+              │     TIME-SERIES CV         │
+              │                            │
+              │ Fold 1 → Fold 2 → Fold 3  │
+              │ → Fold 4 → Fold 5          │
+              └─────────────┬──────────────┘
+                            ↓
+                 7. BORUTA FEATURE SELECTION
+                            ↓
+                 8. HYPERPARAMETER TUNING
+                            ↓
+        ┌──────────────────────────────────────────┐
+        │                MODELS                    │
+        │                                          │
+        │ Linear Regression                        │
+        │ Random Forest                            │
+        │ XGBoost                                  │
+        │ AdaBoost                                 │
+        │ Gradient Boosting                        │
+        │ CatBoost                                 │
+        │ ANN                                      │
+        │ LSTM                                     │
+        └──────────────────┬───────────────────────┘
+                           ↓
+                  9. MODEL EVALUATION
+                           ↓
+          ┌────────────────┴─────────────────┐
+          ↓                                  ↓
+      Regression                       Classification
+      MAE                              Accuracy
+      RMSE                             Precision
+      MAPE                             Recall
+      R²                               F1
+                                      ROC-AUC
+                                      ROC Curve
+          └────────────────┬─────────────────┘
+                           ↓
+                    10. MODEL COMPARISON
+                           ↓
+                      BEST MODEL
+                           ↓
+              ┌────────────┴────────────┐
+              ↓                         ↓
+           SHAP                       LIME
+              ↓                         ↓
+       Global Importance         Local Explanation
+              └────────────┬────────────┘
+                           ↓
+                     VENN DIAGRAM
+              Feature Importance Overlap
+                           ↓
+                  11. FUTURE FORECAST
+                           ↓
+                Price + Return + Direction
+                           ↓
+                    12. RISK ANALYSIS
+                • Volatility
+                • Drawdown
+                • Sharpe Ratio
+                • VaR
+                           ↓
+                    13. BACKTESTING
+                           ↓
+                 Historical Strategy
+                           ↓
+                    14. SANKEY DIAGRAM
+                Feature → Model → Signal
+                → Risk → Decision
+                           ↓
+                 15. STREAMLIT DASHBOARD
+                           ↓
+              USER-FACING APPLICATION
